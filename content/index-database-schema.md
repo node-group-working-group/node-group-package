@@ -13,6 +13,7 @@ Each file has an SQLite database called `index.db`. This file contains all neces
 * `id`: The node's identifier. Primary key.
 * `node_type_id`: The foreign key pointing to this node's type.
 * `content`: The node's content (JSON). Refer to ["Content and Media Assets"](content-and-media-assets.md).
+* `url`: The node's access point. Can be shared through multiple nodes.
 #### node_type
 * `id`: The node's type identifier. Primary key.
 * `name`: The node's type name. Must be short (hopefully not longer than two words), in snake case, and lowercase.
