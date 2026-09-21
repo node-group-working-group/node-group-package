@@ -1,2 +1,41 @@
 ## Metadata Schema
-`metadata.json` defines all the descriptive information associated with a file, including its source, authors, and any other relevant contextual details.
+`metadata.json` defines all descriptive information associated with a file, including its source, authors, and any other relevant contextual details. Here's an example:
+
+```
+{
+    "title": "...",
+    "subject": "...",
+    "contributors": 
+    [
+        {
+            "name": "...",
+            "contribution": "..."
+        },
+        {
+            "name": "...",
+            "contribution": "..."
+        }
+    ],
+    "publisher" "...",
+    "description": "...",
+    "date": "...",
+    "identifier": "...",
+    "language": "...",
+    "license": "...",
+    "@version": "..."
+}
+```
+### Metadata Breakdown
+Any field starting with `@` is used for system management and should not be edited manually.
+* `title`: The file's title.
+* `subject`: The file's subject or academic field.
+* `contributors`: The file's contributos. Contributors have the following fields:
+    * `name`: The contributor's full name.
+    * `contribution`: The contributor's role in this file.
+* `publisher`: The file's publisher.
+* `description`: The file's description.
+* `date`: The file's publication date.
+* `identifier`: The file's identifier (e.g. ISBN).
+* `language`: The file's content display language.
+* `license`: The file's license.
+* `@version`: The file's version.
