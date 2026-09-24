@@ -4,12 +4,12 @@ Nodes have `content`. This field holds the node's information as JSON. Rather th
 * We don't need to adhere to a universal structure; all applications are different, and so they need different types of models. 
 * We retain control over the type's properties and styling (how they are displayed on screen), which are then stored to ensure consistent behavior between environments.
 
-At the end, all valid JSON is valid in `content`. However, applications should always check for the node's type, which contain the `scheme` and `scheme_font` fields necessary for schema validation and correct node displaying. Refer to ["Index Database Schema"](index-database-schema.md).
+At the end, all valid JSON is valid in `content`. However, applications should always check for the node's type, which contain the `scheme` and `scheme_font` fields necessary for schema validation and correct node displaying. More details on [Index Database Schema](index-database-schema.md).
 
 ### Media Assets
-When a node is inserted into the index database, a dedicated directory is automatically created for its assets. A node's `content` field can then reference any asset within its own directory using a relative path.
+When a node is inserted into the index database, one can specify a dedicated directory to be automatically created for its assets. A node's `content` field can then reference any asset within its own directory using a relative path.
 
-Every node receives a dedicated asset directory for its binary objects (blobs), and each directory's path is generated using a SHA256 hash from the node's `id`.
+The dedicated asset directory is reserved for the node's binary objects (blobs), and the directory's path is generated using a SHA256 hash from the node's `id`.
 
 ![Entity relationship diagram of how a node's contents and assets are stored](/content/assets/er_diagram_content.png)
 
