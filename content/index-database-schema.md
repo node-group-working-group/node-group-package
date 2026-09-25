@@ -42,4 +42,4 @@ The following example illustrates how different nodes interact with each other e
 
 ![Node relationship diagram example](/content/assets/node_relationship_diagram_example.png)
 
-In this example, nodes are represented by circles displaying the node's type, with the URL and ID orbiting each circle denoted as `url(id)`. Nodes relate to one another in distinct ways; for instance, both `mapuche(32)` and `mapuchedungun(34)` share the same image node `media/mapuche(21)` connected via a `has_media` edge. Another notable relationship is between `mapudungun(1)` and `mapuchedungun(34)`, which are both related to each other as synonyms. These examples illustrate just a few of the ways information can be described within this storage system.
+In this diagram, nodes are represented by circles displaying the node's type, with the URL and ID orbiting each circle denoted as `url(id)`. Nodes relate to one another in distinct ways; for instance, both `mapuche(32)` and `mapudungun(3)` share the same image node `media/mapuche(21)`. This illustration shows just a few of the ways information can be described within this storage system.
